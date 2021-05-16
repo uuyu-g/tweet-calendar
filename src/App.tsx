@@ -1,43 +1,22 @@
-import React, { useState } from 'react'
-import logo from './logo.svg'
-import './App.css'
+import React from 'react'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello Vite + React!</p>
-        <p>
-          <button onClick={() => setCount((count) => count + 1)}>
-            count is: {count}
-          </button>
-        </p>
-        <p>
-          Edit <code>App.tsx</code> and save to test HMR updates.
-        </p>
+    <div className="text-center my-8 flex justify-center">
+      <div className="px-20 py-6 rounded-2xl bg-gray-600 text-gray-100">
         <p>
           <a
-            className="App-link"
-            href="https://reactjs.org"
+            rel="noreferrer"
+            href="https://github.com/suzukey/vite_windi_sample"
             target="_blank"
-            rel="noopener noreferrer"
           >
-            Learn React
-          </a>
-          {' | '}
-          <a
-            className="App-link"
-            href="https://vitejs.dev/guide/features.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Vite Docs
+            Vite + React + WindiCSS
           </a>
         </p>
-      </header>
+        <p>
+          <em className="text-sm opacity-75">Soooo fast!</em>
+        </p>
+      </div>
     </div>
   )
 }
